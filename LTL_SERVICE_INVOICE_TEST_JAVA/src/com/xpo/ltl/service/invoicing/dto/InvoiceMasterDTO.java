@@ -1,8 +1,13 @@
 package com.xpo.ltl.service.invoicing.dto;
 
+import java.util.Calendar;
+
 public class InvoiceMasterDTO {
 
 	String masterKey;
+	String debtorKey;
+	Calendar invoiceDt;
+	
 	public String getMasterKey() {
 		return masterKey;
 	}
@@ -15,5 +20,10 @@ public class InvoiceMasterDTO {
 	public void setDebtorKey(String debtorKey) {
 		this.debtorKey = debtorKey;
 	}
-	String debtorKey;
+	public Calendar getInvoiceDt() {
+		return invoiceDt;
+	}
+	public void setInvoiceDt(Calendar invoiceDt) {
+		this.invoiceDt = invoiceDt;
+	}
 }
